@@ -1,16 +1,17 @@
 puts "Enter domestic animal name: "
 animal = gets.chomp.capitalize
 
-if animal == 'Horse'
+case 
+  when animal == 'Horse'
   puts animal + " talking igo-go. :)"
 
-elsif animal == 'Cow'
+  when animal == 'Cow'
   puts animal + " talking mu-u-u."
 
-elsif animal == 'Pig'
+  when  animal == 'Pig'
   puts animal + " talking hryu-hryu. :)"
 
-elsif animal == 'Goat'
+  when animal == 'Goat'
   puts animal + " talking be-e-e. :)"
 
 else
