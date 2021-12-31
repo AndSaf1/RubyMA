@@ -10,19 +10,19 @@ end
 class BricksFactory < Brick
 
   def create_brisk
-    brisk = {}
+    brick = Brick.new
   end
 
-  def color_brisk
+  def color_brick
     color = [white, brown, yellow, green, blue, red, black]
     color = color.join(', ').sample
   end
 
-  def state_brisk
+  def state_brick
     state_filter =  state.rand(100) < 80 ? 'whole' : 'broken'
   end
    
-  def whole_brisk
+  def whole_brick
     whole_size = state_filter.size if state_filter == 'whole'
   end
 
